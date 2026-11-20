@@ -1,0 +1,160 @@
+# Blur the Background in Photoshop
+
+## 1. Duplicate the Background Layer
+
+1. Open the image in Adobe Photoshop.
+2. In the Layers panel, select the **Background** layer.
+3. Press **Ctrl+J** (Windows) to duplicate the layer.
+4. Duplicate the new layer again with **Ctrl+J**.
+5. Rename the lower copy **BG**.
+6. Rename the upper copy **Subject**.
+
+The **Subject** layer should remain above the **BG** layer.
+
+## 2. Select the Subject Automatically
+
+1. Select the **Subject** layer in the Layers panel.
+2. Select the **Object Selection Tool**. It is normally located below the Lasso Tool, but Photoshop may group it with the **Quick Selection Tool** or **Magic Wand Tool**.
+3. Open the **Select** menu.
+4. Choose **Subject**.
+
+Photoshop will automatically detect and create a selection around the person or main subject.
+
+## 3. Mask the Subject
+
+1. Keep the **Subject** layer selected.
+2. In the Layers panel, click the **Add Layer Mask** button.
+
+Photoshop masks the area outside the selection. The **Subject** remains visible, while the rest of the image is hidden.
+
+## 4. Isolate the Background
+
+1. Turn off the **Subject** layer by clicking its eye icon in the Layers panel.
+2. Select the **BG** layer.
+3. Select the **Object Selection Tool** again.
+4. Open the **Select** menu and choose **Subject**.
+
+The subject is selected in the BG layer, which is a temporary selection used to remove it from the background.
+
+## 5. Remove the Selected Subject with Content-Aware Fill
+
+1. Open **Edit > Fill**.
+2. Set **Contents** to **Content-Aware**.
+3. Check **Color Adaptation**.
+4. Set **Mode** to **Normal**.
+5. Set **Opacity** to **100%**.
+6. Leave **Preserve Transparency** unchecked.
+7. Click **OK**.
+
+Photoshop fills the selected subject area with content sampled from the surrounding image.
+
+## 6. Deselect the Subject
+
+Press **Ctrl+D** to deselect the area.
+
+Zoom in and inspect the background. Any outlines or unwanted remnants where the subject was removed can be corrected in the next step.
+
+## 7. Clean the Background
+
+1. Select the **Spot Healing Brush Tool**.
+2. Set **Mode** to **Normal**.
+3. Set the brush type to **Content-Aware**.
+4. Paint over remaining outlines, stains, outlets, or duplicated details.
+5. Continue zooming in and working around the subject area until the background looks natural.
+
+Use a small brush for fine edges and a larger brush for broad areas.
+
+## 8. Restore the Subject
+
+Turn the **Subject** layer back on by selecting its eye icon in the Layers panel.
+
+Make sure the **Subject** layer is visible above the **BG** layer.
+
+## 9. Convert the Background to a Smart Object
+
+1. Select the **BG** layer.
+2. Right-click the **BG** layer.
+3. Choose **Convert to Smart Object**.
+
+Converting the background to a Smart Object allows the blur settings to be changed later.
+
+## 10. Apply the Tilt-Shift Blur
+
+1. Select **Filter**.
+2. Open **Blur Gallery**.
+3. Choose **Tilt-Shift**.
+
+The Blur Gallery opens with blur controls that can be adjusted in the image and on the right side of the interface.
+
+## 11. Increase the Blur
+
+1. In the Blur Gallery options, increase the **Blur** effect until the background reaches the desired softness.
+2. Drag the horizontal focus-control lines to determine where the image stays sharp and where the blur begins.
+3. Hold **Alt** and drag the center control point downward or upward, as needed.
+4. Position the controls so that the subject remains in focus and the background becomes progressively blurred.
+5. Click **OK**.
+
+The blur is applied nondestructively because the **BG** layer is a Smart Object.
+
+## 12. Reopen or Adjust the Blur
+
+You can adjust the blur later:
+
+1. Double-click the **Tilt-Shift** entry in the **BG** Smart Object.
+2. The original Blur Gallery settings will reopen.
+3. Change the blur radius or control positions.
+4. Click **OK**.
+
+## 13. Inspect the Subject Edges
+
+1. Zoom in on the subject.
+2. Look for unnatural edges or areas that remain visible outside the subject.
+3. Turn off the **BG** layer temporarily if you need to inspect the subject edges against transparency.
+
+## 14. Refine the Subject Layer Mask
+
+1. Select the mask thumbnail on the **Subject** layer, not the image thumbnail.
+2. Select the **Brush Tool**.
+3. Set **Opacity** to **100%**.
+4. Set **Flow** to **100%**.
+5. Set **Smoothing** to about **10%**.
+6. Set **Angle** to **0 degrees**.
+7. Set brush **Hardness** to **0%**.
+8. Choose a soft round brush.
+
+Understanding the mask colors:
+
+- **White** reveals or restores the subject.
+- **Black** hides areas and leaves more of the background blurred.
+
+## 15. Paint to Perfect the Subject
+
+1. Make sure white is the foreground color.
+2. Paint with white over areas of the subject that were unintentionally removed or masked.
+3. Switch to black in the foreground.
+4. Paint with black over areas that should remain more blurred or were incorrectly included in the subject selection.
+
+To switch foreground and background colors, press **X**.
+
+## 16. Fix Any Missed Subject Areas
+
+1. Temporarily turn off the **BG** blur layer.
+2. Zoom in on the subject.
+3. Inspect hands, hair, clothing, and any thin or detailed edges.
+4. Select the **Subject** mask.
+5. Use a small soft brush.
+6. Paint with white over missed parts of the subject.
+7. Paint with black over any unwanted areas that should remain in the background.
+
+## 17. Complete the Final Refinement
+
+1. Turn the **BG** layer back on.
+2. Scroll and zoom across the entire image.
+3. Check for straight lines, hair edges, clothing edges, and any remaining outlines.
+4. Use black on the foreground to blur or remove an unwanted area.
+5. Use white on the foreground to restore a sharp subject area.
+6. Continue until the subject and background transition looks natural.
+
+## 18. Save the Finished Image
+
+Save the editable Photoshop project as a `.psd` to preserve all layers and the Smart Filter. Export a copy as `.jpg` or `.png` when you need a finished image for sharing or printing.
