@@ -1,0 +1,7 @@
+# Create a Background copy layer, then go to Adjustments and click on it.
+# Choose Curves.
+# Select the zigzag (curve) option on the left, then drag the straight-line curve upward.
+# Next, open the Blending Options and go to Blend If. On the underlying layer, drag the white-point arrow toward the white side. Press Alt to split the arrow into two halves, then drag the right half toward the white side.
+# Since we do not want the entire body to be affected by the texture or tone, select the layer and press Ctrl+I.
+# Select the Brush tool, then paint over the areas where you want to bring out detail in the picture.
+# If you think the effect is not strong enough, duplicate the adjustment layer or increase its opacity to your preference.
